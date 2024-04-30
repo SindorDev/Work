@@ -401,11 +401,77 @@
 // console.log(Boolean(Symbol("salom"))); // true
 // console.log(Boolean(BigInt("salom"))); // true
 
-let start = +prompt("son kiriting ");
-let end = +prompt("son kiriting ");
+// let start = +prompt("son kiriting ");
+// let end = +prompt("son kiriting ");
 
-for(let i = start; i <= end; i++) {
-     if(i % 2 == 0) {
-          document.write( i )
-     }
-}
+// for(let i = start; i <= end; i++) {
+//      if(i % 2 == 0) {
+//           document.write( i )
+//      }
+// }
+
+// let a = 1;
+// let b = 100;
+
+// for(let i = a; i <= b; i++) {
+//      if(i % 3 == 0 && i % 5 == 0)  {
+//           console.log(i);
+//      }
+// }
+// let word = "Salom"
+// for (let i = 0; i <= word.length; i++) {
+//      console.log(word[i])
+// }
+
+// for (let i = 1; i < 10; i++) {
+//      for(let k = 1; k <= 10; k++) {
+//           console.log(`${i} * ${k} = ${i * k}`)
+//      }
+//      console.log("=============================")
+// }
+
+
+// let firstname = "Sindor";
+// let sum = 0;
+
+// for(let i = 0; i < firstname.length; i++) {
+//      sum += firstname.charCodeAt(i);
+// }
+// document.write(sum)
+
+// let sentence = prompt("Enter your sentence").trim();
+// let count = 1;
+
+// for(let i = 0; i < sentence.length; i++) {
+//      if(sentence[i] == " ") {
+//           count++
+// }
+// }
+
+// document.write(count)  
+// function minMax(arr) {
+//      let min = arr[1];
+//      let max = arr[1];
+//      for(let i = 0; i < arr.length; i++) {
+//           if(arr[i] > max) {
+//                max = arr[i];
+//           }
+//           if(arr[i] < min) {
+//                min = arr[i];
+//           }
+//      }
+//      return [min, max];
+// }
+// console.log(minMax([1,2,3,4,5]));
+
+// let text = prompt("Enter your text:");
+// let count = 0;
+// for(let i = 0; i < text.length; i++) {
+//      count++
+// }
+// if(count % 2 == 0) {
+//      document.write("Juft son");
+// }
+// else {
+//      document.write("Toq son")
+// }
