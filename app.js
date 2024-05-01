@@ -475,3 +475,171 @@
 // else {
 //      document.write("Toq son")
 // }
+
+// let fruits = ["Apple", "Banana", "Kiwi", "Peach", "Orange"];
+
+// for(let i = 0; i < fruits.length; i++) {
+//      if(!fruits[i].includes("a") && !fruits[i].includes("A")) {
+//           console.log(fruits[i]);
+//      }
+// }
+
+// let users = [
+//      {
+//          username: "john",
+//          password: "123",
+//          email: "j@j.com",
+//          cars: ["bmw", "audi", "pagani", "tata"]
+//      },
+//      {
+//          username: "jane",
+//          password: "456",
+//          email: "j@j.com",
+//          cars: ["damas", "tesla"]
+//      },
+//      {
+//          username: "jim",
+//          password: "789",
+//          email: "j@j.com",
+//          cars: ["ferrari", "tico", "mercedes"]
+//      }
+// ]
+
+// for(let i = 0; i < users.length; i++) {
+//      console.log(users[i].cars.length)
+// }
+// let users = [
+//      {
+//          username: "john",
+//          password: "123",
+//          email: "j@j.com",
+//          cars: ["bmw", "audi", "pagani", "tata"]
+//      },
+//      {
+//          username: "jane",
+//          password: "456",
+//          email: "j@j.com",
+//          cars: ["damas", "tesla"]
+//      },
+//      {
+//          username: "jim",
+//          password: "789",
+//          email: "j@j.com",
+//          cars: ["ferrari", "tico", "mercedes"]
+//      }
+// ]
+// for(let i = 0; i < users.length; i++) {
+//      if(users[i].cars.length > 2) {
+//      console.log(users[i].username)
+//      }
+// }
+
+// for(let i = 0; i < 10; i++) {
+//      if(i % 2 == 0) {
+//           continue
+//           // break
+//      }
+//      console.log(i)
+// }
+
+// let lazies = ["John", "Smith", "Bill"];
+
+// for(let i = lazies.length - 1; i >=0; i--) {
+//      console.log(lazies[i])
+// }
+
+// let username = prompt("Ismingizni kiriting:");
+
+// while(!username.includes("a")) {
+//      username = prompt("Ismingizni kiriting again:");
+// }
+// console.log(username)
+// let username;
+// let password;
+// do { 
+//      username = prompt("Enter your Name:");
+//      password = prompt("Enter your password:");
+
+// } while (username != "johndoe" || password != "12345678");
+
+
+// console.log("welcome");
+
+
+// let i = 1;
+
+// while(i <= 10) {
+//      console.log(i)
+//      i++;
+// }
+
+
+// let name;
+
+// while(!name || name.length === 0) {
+//      if(!name || name.length === 0) {
+//           alert("Please Enter your name");
+//      }
+//      name = prompt("Enter your name");
+// }
+
+// document.write(name)
+
+
+
+// let option;
+
+// while(!['+','-', '/', '*', '0'].includes(option)) {
+//      option = prompt("+ - addition\n- - subtraction\n * - multiplication\n / - division\n\n 0 - exit");
+// };
+
+// let num1;
+// while(!num1 || typeof num1 !== "number") {
+//      num1 = +prompt("Num1: ");
+// } 
+// let num2;
+// while(!num2 || typeof num2 !== "number") {
+//      num2 = +prompt("Num2: ");
+// }
+
+// switch(option) {
+//      case "+": {
+//           document.write(`n1 + n2 = ${num1 + num2}`);         
+//           break
+//      }
+//      case "-": {
+//           document.write(`n1 - n2 = ${num1 - num2}`);         
+//           break
+//      }
+//      case "*": {
+//           document.write(`n1 * n2 = ${num1 * num2}`);
+//           break
+//      }
+//      case "/": {
+//           document.write(`n1 / n2 = ${num1 / num2}`);
+//           break
+//      }
+//      case "0": {
+//           document.write("Goodbye");
+//           break
+//      }
+//      default: {
+//           document.write("Invali option");
+//      }
+// }
+
+// let num;
+// let random = Math.floor(Math.random() * 10);
+
+// do {
+//      num = +prompt("Enter your number:");
+//      if(num % random === 0) {
+//           document.write(`${num} is divisible by ${random}`);
+//           break
+//      }
+//      else {
+//           continue;
+//      }
+
+// } while (true);
+
