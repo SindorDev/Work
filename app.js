@@ -702,3 +702,15 @@
 
 // let calc = calculator(n1, n2, option);
 // console.log(calc);
+
+
+// let groceryList = ["gosht", "yog'", "guruch"];
+
+// function displayGroceryList() {
+//      console.log("Olinishi kerak bo'lgan mahsulotlar")
+//      for(let i = 0; i <= groceryList.length; i++) {
+//          console.log(`${i + 1}. ${groceryList[i]}`)
+//      }
+// }
+// let result = displayGroceryList();
+
