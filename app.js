@@ -704,13 +704,70 @@
 // console.log(calc);
 
 
-let groceryList = ["gosht", "yog'", "guruch", "piyoz", "kartoshka"];
+// let groceryList = ["gosht", "yog'", "guruch", "piyoz", "kartoshka"];
 
-function displayGroceryList() {
-     console.log("Olinishi kerak bo'lgan mahsulotlar")
-     for(let i = 0; i <= groceryList.length; i++) {
-         console.log(`${i + 1}. ${groceryList[i]}`)
-     }
-}
-let result = displayGroceryList();
+// function displayGroceryList() {
+//      console.log("Olinishi kerak bo'lgan mahsulotlar")
+//      for(let i = 0; i <= groceryList.length; i++) {
+//          console.log(`${i + 1}. ${groceryList[i]}`)
+//      }
+// }
+// let result = displayGroceryList();
 
+// console.log(age);
+// console.log(4 + 5); // temporary deadzone
+// let age = 30;
+ 
+// let student = {
+//      name: "Bill",
+//      age: "20",
+//      from: "Egypt",
+//      address: {
+//           street: "Al Riyad",
+//           home: "30",
+//      },
+//      summary: function() {
+//           return `${this.name} is ${this.age} years old. He is from ${this.from}.`
+//      }
+// }
+// console.log(student.summary())
+
+// console.log(Math.abs(-232));
+// console.log(Math.floor(4.41212));
+// console.log(Math.trunc(4.41412));
+// console.log(Math.PI());
+// console.log(Math.SQRT1_2);
+// console.log(Math.SQRT1_2);
+// console.log(Math.sqrt(10));
+// console.log(Math.cbrt(27));
+// console.log(Math.round(4.1093197));
+// console.log(Math.ceil(4.414421421));
+// console.log(Math.max(4,3,5,2,4,9));
+// console.log(Math.min(1,3,5,2,4,9));
+// let numbers = [2,4,5,6,7,10,1];
+// console.log(Math.max(...numbers));
+// console.log(Math.min(...numbers));
+
+// function well(x) {
+//      let count = ""
+//      for(let i = 0; i < x.length; i++) {
+//          if(x[i] === "!" ) {
+//               continue
+//      }
+//      count += x[i]
+// }
+//      return count
+// }
+// let result = well("!!!salom!!!!");
+
+// console.log(result)
+
+// function well(x) {
+//      while(x.endsWith("!")) {
+//           x = x.slice(0, -1)
+//      }
+//      return x
+// }
+// let result = well("!!!salom!!!!");
+
+// console.log(result)
