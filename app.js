@@ -704,13 +704,13 @@
 // console.log(calc);
 
 
-// let groceryList = ["gosht", "yog'", "guruch"];
+let groceryList = ["gosht", "yog'", "guruch", "piyoz", "kartoshka"];
 
-// function displayGroceryList() {
-//      console.log("Olinishi kerak bo'lgan mahsulotlar")
-//      for(let i = 0; i <= groceryList.length; i++) {
-//          console.log(`${i + 1}. ${groceryList[i]}`)
-//      }
-// }
-// let result = displayGroceryList();
+function displayGroceryList() {
+     console.log("Olinishi kerak bo'lgan mahsulotlar")
+     for(let i = 0; i <= groceryList.length; i++) {
+         console.log(`${i + 1}. ${groceryList[i]}`)
+     }
+}
+let result = displayGroceryList();
 
