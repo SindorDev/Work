@@ -901,3 +901,126 @@
 // }
 
 // info([2, 4, 6, 8,])
+
+// let number = 20;
+
+// function numbers() {
+
+//      if(number % 3 === 0 && number % 5 !== 0) {
+//           document.write("Fizz")
+//      }
+//      else if(number % 5 === 0 && number % 3 !== 0) {
+//           document.write("Buzz")
+//      }
+//      else if(number % 3 == 0 && number % 5 == 0) {
+//           document.write("FizzBuzz")
+//      }
+//      else {
+//           document.write(number)
+//      }
+// }
+
+// numbers()
+
+// let str = "ad13sd3pp3ok43".toLowerCase();
+
+// function checked(number) {
+//      for(let i = 0; i < number.length; i++) {
+//           return +number.replace(/[a-z]/g, "")
+//      }
+// }
+
+// let result = checked(str);
+
+// console.log(result)
+
+// for
+
+// let arr = [3, 4, 10, 7, 14, 19]
+// let dec = []
+// for(let i = 0; i <= arr.length; i++) {
+//      if(arr[i] >= 10) {
+//           dec.push(arr[i])
+//      }
+// }
+
+// console.log(dec)
+
+// forEach
+
+// let arr = [3, 4, 10, 7, 14, 19]
+// let dec = []
+// arr.forEach(item => {
+//      if(item >= 10) {
+//           dec.push(item)
+//      }
+// })
+
+// console.log(dec)
+
+// filter
+
+// let arr = [3, 4, 10, 14, 19, 20]
+// let dec = arr.filter(item => item >= 10)
+// console.log(...dec)
+
+
+// let users = [
+//      {
+//        name: "John",
+//        age: 30,
+//        country: "UZB",
+//        cars: ["BMW", "Mercedes"]
+//      },
+//      {
+//        name: "Bob1",
+//        age: 40,
+//        country: "USA",
+//        cars: ["BMW", "tesla", "volvo"]
+//      },
+//      {
+//        name: "Jane",
+//        age: 25,
+//        country: "UZB",
+//        cars: ["lambo", "rr",  "ferrari", "bugatti"]
+//      },
+//      {
+//        name: "Bob2",
+//        age: 40,
+//        country: "USA",
+//        cars: ["tata", "toyota", "porsche", "ford", "honda"]
+//      },
+//    ];
+
+//    let result = users.find(users => users.cars.length > 3);
+//    console.log(result);
+
+// let users = [
+//      {
+//        name: "Willipm",
+//        age: 30,
+//        country: "UZB",
+//        cars: ["BMW", "Mercedes"]
+//      },
+//      {
+//        name: "Bob",
+//        age: 40,
+//        country: "USA",
+//        cars: ["BMW", "tesla", "volvo"]
+//      },
+//      {
+//        name: "Jane",
+//        age: 25,
+//        country: "UZB",
+//        cars: ["lambo", "rr",  "ferrari", "bugatti"]
+//      },
+//      {
+//        name: "Nick",
+//        age: 41,
+//        country: "USA",
+//        cars: ["tata", "toyota", "porsche", "ford", "honda"]
+//      },
+//    ];
+
+//    let result = users.findIndex(users => users.name.includes("o"))
+//    console.log(result)
