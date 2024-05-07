@@ -771,3 +771,133 @@
 // let result = well("!!!salom!!!!");
 
 // console.log(result)
+
+// function well(a) {
+//      this.a = a
+//      this.outputA = function () {
+//           console.log(this.a)
+//      }
+// }
+
+// let oson1 = new well(10);
+// oson1.outputA();
+
+// let a = +prompt("Son kiriting");
+// let b = +prompt("Son kiriting");
+
+// function calculator(a, b, c) {
+//      this.c = a + b;     
+//      this.output = function () {
+//           console.log(this.c)
+//      }
+// }
+// let result = new calculator(a, b,);
+// result.output();
+
+// let a = +prompt("Son kiriting");
+
+// function calculator(a) {
+//      this.a = a;
+//      if(a < 0) {
+//           console.log("manfiy");
+//      }
+//      else {
+//           console.log("musbat");
+//      }
+// }
+// calculator(a);
+
+// let a = +prompt("Son kiriting");
+
+// function calculator(a) {
+//      this.a = a;
+//      if(a % 2 == 0) {
+//           console.log("Juft");
+//      }
+//      else {
+//           console.log("Toq");
+//      }
+// }
+// calculator(a);
+
+// let users = ["John", "William", "Bob", "Smith", "Oybek", "Odinaxon", "Chittak", "Shrek", "Sit"];
+
+// for(let i = 0; i < users.length; i++) {
+//      console.log("Mr " + users[i])
+// }
+
+// let FirstName = prompt("Ismingizni kiriting");
+// let lastname = prompt("Familiyangizni kiriting");
+// let age = +prompt("Yoshingizni kiriting");
+
+// function userData(FirstName, lastname, age) {
+//      this.FirstName = FirstName;
+//      this.lastname = lastname;
+//      this.age = age;
+//      this.outPut = function () {
+//           console.log("Ism: " +  this.FirstName, "\n", "Familiya: " + this.lastname, "\n", "Yosh: " + this.age);
+//      }
+//      return this.outPut()
+// }
+// userData(FirstName, lastname, age);
+
+
+// function calculatorP(a, b, c) {
+//      this.a = a;
+//      this.b = b;
+//      this.c = c;
+//      this.output = function () {
+//           if(a < b && b > c) {
+//                console.log(b)
+//           }
+//           else if(b < a && a > c) {
+//                console.log(a)
+//           }
+//           else if(c > a && c > b) {
+//                console.log(c)
+//           }
+//           else {
+//                console.log("Sonlar teng")
+//           }
+
+//      }
+//      return this.output()
+// }
+
+// calculatorP(5, 10, 15);
+
+// let text = prompt("So'z kiriting");
+// let harf = prompt("Harfni kiriting");
+// function generator() {
+//      this.text = text.toLowerCase()
+//      this.count = 0;
+//      this.harf = harf.toLowerCase();
+//      this.outPut = 
+//      function () {
+//           for(let i = 0; i <= text.length; i++) {
+//                if(this.text[i] === this.harf) {
+//                     this.count++;
+//                }
+//           }
+//           return this.count;
+//      }
+
+//      return this.outPut();
+// }
+
+// document.write(generator())
+
+// function info(str) {
+//      this.str = str;
+//      this.count = 0;
+//      this.outPut = function() {
+//           for(let i = 0; i < str.length; i++) {
+//                this.count += str[i]
+
+//           }
+//           console.log(this.count)
+//      }
+//      return this.outPut();
+// }
+
+// info([2, 4, 6, 8,])
