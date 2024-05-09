@@ -1023,4 +1023,114 @@
 //    ];
 
 //    let result = users.findIndex(users => users.name.includes("o"))
-//    console.log(result)
+//    console.log(result) 
+
+// let nums = [1,2,3,4,5,6,7,8,9,10];
+
+// let filteredNums = nums.filter(
+//      (value, index, array) => value % 2 ==0 && value % 5 == 0
+// );
+
+// console.log(...filteredNums)
+
+// let users = ["john", "jack", "Mark", "Alex", "Ann", "alexjon"];
+// let usersFilter = users.filter((value, index, array) => value.toLowerCase().includes("a"));
+
+// console.log(...usersFilter)
+
+
+// const students = [
+//      {
+//         _id: 1,
+//         name: "Jack",
+//         age: 25,
+//         department: "IT",
+//         salary: 12000,
+//      },
+//      {
+//         _id: 2,
+//         name: "Jane",
+//         age: 19,
+//         department: "Software Engineering",
+//         salary: 1000,
+//      },
+//      {
+//         _id: 3,
+//         name: "Bob",
+//         age: 21,
+//         department: "Frontend",
+//         salary: 15000,
+//      },
+//      {
+//         _id: 4,
+//         name: "Sindor",
+//         age: 19,
+//         department: "Frontend",
+//         salary: 17000,
+//      },
+//      {
+//         _id: 5,
+//         name: "Farhodbek",
+//         age: 19,
+//         department: "Software Engineering",
+//         salary: 1000,
+//      },
+//   ];
+
+//  let result =  students.reduce((sum, value) => sum += value.salary,0) 
+//   console.table(result)
+
+// students.forEach((student, index) => {
+//      console.log(
+//           `${index +1} ${student.name} ${student.department} ${student.salary}`
+//      )
+// } )
+// const nums = [2, 4, 1, 3, 6, 7, 8, 10, 9, 11, 5, 12];
+// let result = nums.sort((a, b) => a - b);
+// console.log(...result)
+
+// let names = ["john", "jack", "Mark", "Alex", "Ann", "alexjon"];
+// let name = names.map(name => name.toUpperCase());
+// document.write(name)
+
+// let names = ["john ", "jack ", "Mark ", "Alex ", "Ann ", "alexjon "];
+// let name = names.map(name => name.slice(0, 1).toUpperCase() + name.slice(1));
+// document.write(name)
+
+// let products = [
+//      {
+//          name: "TV",
+//          price: 300
+//      },
+//      {
+//          name: "iphone",
+//          price: 1000
+//      },
+//      {
+//          name: "laptop",
+//          price: 5000
+//      }
+//  ];
+//  let  result = products.map(products => products.price)
+//  let total = result.reduce((num, i) => num + i,    0)
+// console.log(total);
+
+// let users = [
+//      {
+//          name: "John",
+//          age: 30,
+//          password: "12345678"
+//      },
+//      {
+//          name: "Bill",
+//          age: 25,
+//          password: "87654321"
+//      }
+//  ]
+
+//  let result = users.map(users => {
+//      users.password = "********"
+//      return users
+// })
+
+//  console.log(result)
