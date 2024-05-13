@@ -1134,3 +1134,377 @@
 // })
 
 //  console.log(result)
+
+// let users = [
+//      {
+//          age: 30,
+//          name: "John"
+//      },
+//      {
+//          age: 40,
+//          name: "William"
+//      },
+//  ]
+
+// for(let user of users) {
+//      for(let key in user) {
+//           console.log(user[key])
+//      }
+// }
+
+// let users = ["John", "Smith", "William"];
+// let age = [30, 50, 80];
+
+// let result = users.map((item, index ) => {
+//      return {
+//           [item]: age[index]
+//      }
+// })
+
+// console.log(result)
+
+// 1. DB
+// 2. Rendering DB -> ma'lumotlarni ekranga chiqarib beradi. +
+// 3. Adding new student -> yangi kelgan o'quvchini kursga qo'shish +
+// 4. Updating student -> student malumotlarini yangilash +
+// 5. Removing student -> o'quvchi ma'lumotlar bazasidan chiqarish +
+// 6. Updating WiFi login info
+// 7. Total income -> displayIncome
+
+// #1
+// let db = [
+//      {
+//         _id: 1,
+//         name: "Jack Smith",
+//         age: 20,
+//         major: "Frontend",
+//         faculty: "BootCamp Frontend",
+//         groupName: "N10",
+//         payment: 100,
+//         duration: 8,
+//         dailyHours: 4,
+//         gender: "male",
+//         studentAddress: {
+//            city: "Qashqadaryo",
+//            street: "Shahriyev",
+//            district: "Qarshi",
+//         },
+//         studentPhone: {
+//            countryCode: "994",
+//            number: "555555555",
+//         },
+//         address: {
+//            city: "Tashkent",
+//            district: "Chilonzor",
+//         },
+//         wifiInfo: {
+//            username: "Jack",
+//            password: "123",
+//         },
+//      },
+//      {
+//         _id: 2,
+//         name: "Alex Smith",
+//         age: 30,
+//         major: "Frontend",
+//         faculty: "BootCamp Frontend",
+//         groupName: "N15",
+//         payment: 100,
+//         duration: 8,
+//         dailyHours: 4,
+//         gender: "male",
+//         studentAddress: {
+//            city: "Qashqadaryo",
+//            street: "Shahriyev",
+//            district: "Qarshi",
+//         },
+//         studentPhone: {
+//            countryCode: "994",
+//            number: "555555555",
+//         },
+//         address: {
+//            city: "Tashkent",
+//            district: "Chilonzor",
+//         },
+  
+//         wifiInfo: {
+//            username: "alex",
+//            password: "1234",
+//         },
+//      },
+//      {
+//         _id: 3,
+//         name: "Mark Smith",
+//         age: 30,
+//         major: "Frontend",
+//         faculty: "BootCamp Frontend",
+//         groupName: "N15",
+//         payment: 100,
+//         duration: 8,
+//         dailyHours: 4,
+//         gender: "male",
+//         studentAddress: {
+//            city: "Qashqadaryo",
+//            street: "Shahriyev",
+//            district: "Qarshi",
+//         },
+//         studentPhone: {
+//            countryCode: "994",
+//            number: "555555555",
+//         },
+//         address: {
+//            city: "Tashkent",
+//            district: "Chilonzor",
+//         },
+//         wifiInfo: {
+//            username: "mark",
+//            password: "123",
+//         },
+//      },
+//   ];
+
+// function displayDB(student = db ) {
+//      if(!student.length) {
+//           console.log("Birorta ham malumot topilmadi")
+//           return;
+//      }
+     
+//      student.forEach((student , index) => { 
+//      console.log(
+          
+//                `${index + 1}. ${student.name}. ${student.faculty} - ${student.groupName}
+//               ${student.payment}. ${student.wifiInfo.username} ${student.wifiInfo.password} `
+//      )})
+// }
+// function addingStudent() {
+//      const newStudent = {
+//           _id: db.length + 1,
+//           name: "Sindor O'lmasov",
+//           major: "Frontend",
+//           age: 19,
+//           faculty: "BootCamp Frontend",
+//           groupName: "N10",
+//           payment: "$100",
+//           duration: "8",
+//           dailyHours: "4",
+//           gender: "male",
+//           studentAddress: {
+//                city: "Samarqand",
+//                street: "Kamardon",
+//                district: "Urgut",
+//           },
+//           studentPhone: {
+//                countryCode: "+998",
+//                number: "906007788",
+//           },
+//           address: {
+//                city: "Tashkent",
+//                district: "Chilonzor",
+//           },
+//           wifiInfo: {
+//                username: "Sindor",
+//                password: "1234",
+//           },
+//      }
+//      db = [...db, newStudent];
+
+//      displayDB();
+// }
+// function updatingStudentInfo() {
+//      const studentID  = 1;
+//      db = db.map((student) => student._id === studentID) 
+//      ? {
+//           ...student,
+//           name: "Mark Smith",
+//           faculty: "BootCamp Frontend",
+//           groupName: "N20",
+//           payment: "150",
+//      }
+//      :student,
+
+//      displayDB()
+// }
+
+// function removeStudent() {
+//      const studentId = 3;
+//      db = db.filter((student) => student._id !== studentId);
+
+//      displayDB()
+// }
+
+// function changingStudentWifiInfo() {
+//      const studentID = 3;
+
+//      db = db.map((student) => student._id === studentID 
+//      ?{
+//           ...student,
+//            wifiInfo: {
+//                ...student.wifiInfo,
+//                username: "Mark",
+//                password: "12345",
+//           }
+//      }
+
+//      : student
+//      );
+
+//      displayDB();
+// }
+
+// function displayIncomeInfo() {
+//      const total = db.reduce((sum, student) => sum + student.payment, 0);
+//      console.log(`Total icome: ${total}`);
+// }
+
+// // displayDB()
+// // addingStudent()
+// updatingStudentInfo()
+
+// let user = {
+//      name: "John",
+//      age: 30,
+// }
+
+// Object.defineProperty(user, "country", {
+//      value: "Usa",
+//      writable: false,
+// })
+// user.country = "UK";
+// console.log(user)
+
+// Object.defineProperties(user, {
+//      country: {
+//           value: "USA",
+//           writable: false
+//      },
+//      email: {
+//           value: "nimadir@gmail.com",
+//           writable: true
+//      }
+// })
+
+// user.email = "something@gmail.com";
+// console.log(user)
+
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// function numbers(sum) {
+//      let res = 0;
+//      for(let i = 0; i < sum.length; i++) {
+//           if(sum[i] % 2 !== 0) {
+//                res += sum[i]
+//           }
+//      }
+//      return res
+// }
+// let result = numbers(array)
+// console.log(result)
+
+
+const db = [
+     {
+          _id: 1,
+          name: "Bill",
+          age: 20,
+          from: "USA",
+          email: "bill@gmail.com",
+          password: "1234"
+     },
+     // {
+     //      _id: 2,
+     //      name: "Alex",
+     //      age: 30,
+     //      from: "UK",
+     //      email: "alex@gmail.com",
+     //      password: "12345"
+     // },
+]
+
+// function UserData() {
+//      this.db = db
+//      this.displayUser = function () {
+//           this.db.forEach((db, index) => {
+//                document.write(`${index + 1}. ${db.name} - ${db.age} yosh - ${db.email} - ${db.password.replace(/./g, "*")}`)
+//           })
+//      }
+//      this.addUser = function () {
+//           this.db = db 
+//           this.addUserInfo = function () {
+//                this.db.push(user)
+//                user = [ 
+//                     {
+//                     _id: 2,
+//                     name: "Avazbek",
+//                     age: 22,
+//                     email: "Avazbek@gmail.com",
+//                     password: 173594,
+//                     }
+//                ]
+//           }
+//      }
+//      return this.displayUser()
+//      return this.addUserInfo()
+// }
+// let result = UserData()
+// document.write(result)
+
+// let user = [
+//      {
+//           name: "John",
+//           age: 30,
+//           cars: "BMW",
+//           color: "black",
+//           price: "$180000"
+//      },
+//      {
+//           name: "Bill",
+//           age: 25,
+//           cars: "Mercedes",
+//           color: "white",
+//           price: "$100000"
+//      },
+//      {
+//           name: "Alex",
+//           age: 20,
+//           cars: "Audi",
+//           color: "red",
+//           price: "$200000"   
+//      },
+//      {
+//           name: "Smith",
+//           age: 35,
+//           cars: "Porsche",
+//           color: "black",
+//           price: "$300000"
+//      }
+// ]
+// const result = Object.groupBy(user, (element , index) => element.color)
+// console.log(result)
+
+// let username = prompt("Enter your name: ")
+
+// localStorage.setItem("username", username)
+
+// let user = {
+//      name: "John",
+//      age: 22,
+// }
+// localStorage.setItem("username", JSON.stringify(user))
+
+// localStorage.setItem("number", 5);
+// let result = localStorage.getItem("number");
+// let result2 = localStorage.getItem(5)
+
+// console.log(result)
+// console.log(result2)
+
+// let car = {
+//      name: "Audi",
+//      price: 3000,
+//      model: "A8"
+// }
+
+// localStorage.setItem("car", JSON.stringify(car));
+// let p = prompt("Summani kiriting");
+// let newData = JSON.parse(localStorage.getItem("car"));
+// newData.price = p 
+// localStorage.setItem("car", JSON.stringify(newData))
