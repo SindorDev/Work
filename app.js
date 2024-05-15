@@ -1400,15 +1400,15 @@
 // console.log(result)
 
 
-const db = [
-     {
-          _id: 1,
-          name: "Bill",
-          age: 20,
-          from: "USA",
-          email: "bill@gmail.com",
-          password: "1234"
-     },
+// const db = [
+//      {
+//           _id: 1,
+//           name: "Bill",
+//           age: 20,
+//           from: "USA",
+//           email: "bill@gmail.com",
+//           password: "1234"
+//      },
      // {
      //      _id: 2,
      //      name: "Alex",
@@ -1417,7 +1417,7 @@ const db = [
      //      email: "alex@gmail.com",
      //      password: "12345"
      // },
-]
+// ]
 
 // function UserData() {
 //      this.db = db
@@ -1508,3 +1508,296 @@ const db = [
 // let newData = JSON.parse(localStorage.getItem("car"));
 // newData.price = p 
 // localStorage.setItem("car", JSON.stringify(newData))
+
+// let shop = [
+//      {
+//           id: 1,
+//           name: "pen",
+//           color: {
+//           color: "blue",
+//           color: "red",
+//           color: "black"
+//           },
+//           price: "2000",
+//      },
+//      {
+//           id: 2,
+//           name: "pen",
+//           color: {
+//           color: "blue",
+//           color: "red",
+//           color: "black"
+//           },
+//           price: "2000",
+//      },
+//      {
+//           id: 3,
+//           name: "pen",
+//           color: {
+//           color: "blue",
+//           color: "red",
+//           color: "black"
+//           },
+//           price: "2000",
+//      },
+// ]
+
+// function displayProducts() {
+//      for(let i = 0; i < shop.length; i++) {
+//           console.log(shop[i])
+//      }
+// }
+
+// function addProduct() {
+//      newShop = {
+//           id: 4,
+//           name: "Pencil",
+//           color: {
+//                color: "blue",
+//                color: "red",
+//                color: "black"
+//           },
+//           price: "12000"
+//      }
+
+//      shop.push(newShop)
+// displayProducts()
+// }
+// addProduct();
+
+// function updateProduct() {
+
+// }
+
+// localStorage.setItem("shops", JSON.stringify(shop[0]))
+// localStorage.setItem("shops1", JSON.stringify(shop[1]))
+// localStorage.setItem("shops2", JSON.stringify(shop[2]))
+// localStorage.setItem("shops3", JSON.stringify(shop[3]))
+
+// let text = Array.from("salom", (x) => x.toUpperCase())
+// console.log(text)
+
+// let arr = ["apple", "kiwi", "banana", "peach", "melon"];
+
+// let k = []
+// for(let i = 0; i < arr.length; i++) {
+//      let word = ""
+//      for(let j = 0; j < arr[i].length; j++) {
+//           if(j % 2 == 0 & j != 0) {
+//                word += "_" + arr[i][j]
+//           }
+//           else {
+//                word += arr[i][j]
+//           }
+//      }
+//      k.push(word)
+// }
+// console.log(...k)
+
+// let arr = [2, 4, 8];
+// let res = [];
+// for(let i = 0; i < arr.length; i++) {
+//      let sum = 0;
+//      for(let k = 1; k < arr[i]; k++) {
+//           sum += i
+//      }
+//      res.push(sum)
+// }
+// console.log("Yig'indisi: ", ...res)
+
+// #1
+
+
+// let shop = JSON.parse(localStorage.getItem("shop"))
+//    ? JSON.parse(localStorage.getItem("shop"))
+//    : [
+//         { _id: 1,
+//           name: "Pen",
+//           color: ["blue", "red", "black"],
+//           price: 2000 },
+//         {
+//            _id: 2,
+//            name: "Pencil",
+//            color: ["blue", "red", "black"],
+//            price: 3000,
+//         },
+//         { _id: 3, name: "paper", color: ["blue", "red", "black"], price: 4000 },
+//         {
+//            _id: 4,
+//            name: "notebook",
+//            color: ["blue", "red", "black"],
+//            price: 5000,
+//         },
+//         { _id: 5, name: "book", color: ["blue", "red", "black"], price: 6000 },
+//      ];
+
+// localStorage.setItem("shop", JSON.stringify(shop));
+
+// function setLocalStorage() {
+//    localStorage.setItem("shop", JSON.stringify(shop));
+// }
+
+// function displayProducts(db = shop) {
+//    db.forEach((item, index) => {
+//       document.write(`${item._id}. ${item.name} - ${item.color} - $${item.price}`);
+//    });
+// }
+
+// function addProduct() {
+     
+//    let NewNmae = prompt("Ism kiriting");
+//    let NewColor = prompt("Rang kiriting");
+//    let NewPrice = prompt("Narxinig kiriting");
+   
+//      const newProduct = {
+//       _id: shop.length + 1,
+//       name: NewNmae,
+//       color: NewColor,
+//       price: NewPrice,
+//    };
+
+//    shop = [...shop, newProduct];
+//    setLocalStorage();
+// }
+// function updateProduct() {
+//    const productID = 1;
+
+//    shop = shop.map((product) =>
+//       product._id === productID
+//          ? {
+//               ...product,
+//               price: 50000,
+//               name: "Book 2",
+//            }
+//          : product
+//    );
+
+//    setLocalStorage();
+// }
+
+// function removeProduct() {
+//    const productID = 2;
+
+//    shop = shop.filter((product) => product._id !== productID);
+
+//    setLocalStorage();
+// }
+
+// function searchProduct() {
+//    const product = "book";
+//    product.toLowerCase();
+
+//    const result = shop.filter((item) =>
+//       item.name.toLowerCase().includes(product)
+//    );
+
+//    displayProducts(result);
+// }
+
+// function totalPrice() {
+//    const result = shop.reduce((sum, item) => sum + item.price, 0);
+
+//    document.write(`Total price: $${result}`);
+// }
+
+
+// let text = prompt(`1 - Mahsulotlar ro'yhati\n2 - Mahsulotlar izlash\n3 - Mahsulotlar qo'shish\n4 - Mahsulotlar tahrirlash\n5 - Mahsulotlar o'chirish\n6 - Mahsulotlar umumiy narxi\n\n\n0 - Dasturdan chiqish`);
+
+// function switchShow() {
+//      switch(text) {
+//           case "1":
+//                displayProducts(db = shop)
+//                break
+//           case "2":
+//                searchProduct()
+//                break
+//           case "3":
+//                addProduct()
+//                break
+//           case "4":
+//                updateProduct()
+//                break 
+//           case "5":
+//                removeProduct()
+//                break
+//           case "6": 
+//                totalPrice()
+//                break
+//           case "0":
+//                break                         
+//      }
+// }
+
+// switchShow();
+
+// let a = 1000;
+// let sum = 0;
+// for(let i = 0; i <= a; i++) {
+//      sum += i
+// }
+// console.log(sum)
+
+// let productPrices = [300, 400, 700, 500];
+// let  discounts = [20, 10, 40, 15];
+
+// let result = productPrices.map((a,b) => a - a * (discounts[b] /100))
+
+// console.log(...result)
+
+// let cars = [
+//      {
+//          id: 1,
+//          name: "BMW",
+//          price: 100,
+//          engine: ["one", "two", "three", "four", "electric"]
+//      },
+//      {
+//          id: 2,
+//          name: "Mercedes",
+//          price: 200,
+//          engine: ["one", "two", "hybrid"]
+//      },
+//      {
+//          id: 3,
+//          name: "Audi",
+//          price: 300,
+//          engine: ["one", "two", "three", "four", "five", "six", "gas"]
+//      },
+//      {
+//          id: 2,
+//          name: "Wolkswagen",
+//          price: 200,
+//          engine: ["one", "two", "hybrid", "gas"]
+//      },
+//  ]
+//  let result = cars.findLast((cars) => cars.engine.includes("hybrid") && !cars.engine.includes("gas"))
+//  console.log(result);
+// let user = {
+//      name: "William",
+//      username: "will",
+//      address: {
+//          lat: "noth345",
+//          long: "est347"
+//      }
+// }
+
+// localStorage.setItem("user", JSON.stringify(user))
+
+
+// let newUser = JSON.parse(localStorage.getItem("user"))
+
+// let n = newUser.address.long + newUser.address.lat
+
+// let result = n.match(/\d+/g)
+
+// console.log(result)
+
+
+const LoginBtn = document.querySelector("#login")
+const RegisterBtn = document.querySelector(".register")
+const h2 = document.querySelector("h2"); 
+
+
+console.log(LoginBtn)
+console.log(RegisterBtn)
+console.log(h2)
